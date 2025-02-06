@@ -5,14 +5,23 @@
 <title>Carrot Cake|Applying CSS Styling|Zharia StJean</title>
 <link rel="stylesheet" href="https://use.typekit.net/aik2nmc.css">
 <link rel="stylesheet" href="https://use.typekit.net/ifl7jsd.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
 margin:0;
-background-color:lightgray;
+background-image:url("Photos-001/batterpattern.jpg")
 
 }
 wrapper{
+margin:auto;
 display:block;
+border:medium;
+box-sizing:border-box;
+padding:30px;
+width:1200px;
+background-color:rgba(164,179,181,0.50)
 }
 header{
 text-align:center;
@@ -26,13 +35,18 @@ font-style: normal;
 font-size:70px;
 color:white;
 background-color:orange;
+border:4px white dashed;
 }
 
 h2{
 font-family: "santelia-rough-two", sans-serif;
 font-weight: 400;
 font-style: normal;
+font-size:35px;
 text-align:center;
+color:orange;
+background:white;
+border:orange 4px dashed;
 
 }
 
@@ -41,30 +55,59 @@ font-family: "santelia-rough-two", sans-serif;
 font-weight: 700;
 font-style: normal;
 color:white;
+text-align:center;
 }
 
 .banner{
-margin-right:auto;
+margin:auto;
+display:block;
 }
 
-section{
-width:50;
-display:inline-block;
-box-sizing:border-box;
-margin-right:-4px;
+.summary{
+text-align:center;
+color:white;
+font-family:"Capriola", serif;
 }
 
 div{
-background-color:rgba(247,139,3,0.80);
+margin:-4px;
 display:inline-block;
-margin:10px -2px;
-box-sizing:content-box;
+vertical-align:top;
+border:4px white dashed;
+background-color:rgba(247,139,3,0.88);
 }
+	
+section{
+display:inline-block;
+box-sizing:border-box;
+width:50%;
+margin-right:-4px;
+vertical-align:top;
+padding:10px;
+color:white;
+font-family:"Capriola", serif;
+			
+}
+	
+.ingredients{
+width:40%;
+vertical-align:top;
+margin:20px;
+}
+.directions{
+width:50%;
+margin:20px;
+
+}
+	
 
 footer{
-background-color:rgba(247,139,3,0.80);
-margin:10px;
+background-color:white;
 box-sizing:border-box;
+border:5px white dashed;
+padding:16px;
+color:orange;
+font-family:"Capriola", serif;
 }
 
 
@@ -81,7 +124,7 @@ box-sizing:border-box;
 
 <img src="carrotcake.jpg" alt="Carrot cake image" class="banner"/>
 <h2>Carrot Cake Recipe</h2>
-<p>This carrot cake recipe with a homemade cream cheese frosting will be your absolute favorite, amongst the many carrot cakes you&rsquo;ve tried! It&rsquo;s moist, easy to make with grated carrots, and so delicious!</p>
+<p class="summary">This carrot cake recipe with a homemade cream cheese frosting will be your absolute favorite, amongst the many carrot cakes you&rsquo;ve tried! It&rsquo;s moist, easy to make with grated carrots, and so delicious!</p>
 
 
 <div class="ingredients">
@@ -101,6 +144,7 @@ box-sizing:border-box;
 <li>3 cups grated carrots</li>
 <li>1 cup chopped pecans</li>
 </ul>
+	
 <h4>Frosting</h4>
 <ul>
 <li>&frac12; cup butter, softened</li>
@@ -110,7 +154,7 @@ box-sizing:border-box;
 <li>1 cup chopped pecans</li>
 </ul>
 </section>
-</div> 
+</div>
 
 <div class="directions">
 <section>
@@ -128,6 +172,7 @@ box-sizing:border-box;
 
 </section>
 </div>
+
 </main>
 <footer>
 <p>&copy; 2024, Zharia StJean</p>
