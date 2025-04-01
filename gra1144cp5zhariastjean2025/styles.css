@@ -5,6 +5,8 @@ body {
 	background-image: linear-gradient(90deg,gray,pink,gray);
 	background-image: url("portals-bg.png");
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+background-size:cover;
 }
 wrapper {
     width: 1366px;
@@ -16,16 +18,73 @@ img {
 ul a li {
     padding: 10px 25px;
     display: inline-block;
+    font-family: "drummond-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    text-align: center;
+    right: 27px;
 }
 ul a li:hover {
-    background-color: hsla(334,74%,82%,1.00);
+    background-color: hsla(337,100%,93%,1.00);
+	
 }
 nav {
-    background-color: hsla(0,0%,0%,1.00);
+   
 }
 nav ul a {
-    color: white;
+    color: #DA9C9D;
 }
 main {
 
+}
+h1 {
+    color: rgba(255,149,174,1.00);
+    font-family: "richmond-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 65px;
+}
+footer {
+    font-family: "drummond-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    color: rgba(240,183,196,1.00);
+}
+h2 {
+    color: rgba(240,183,196,1.00);
+	font-family: "drummond-variable", sans-serif;
+font-variation-settings: "wght" 500;
+	font-size: 30px;
+}
+.tour-list {
+    display: block;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    height: 365px;
+    padding-top: 0px;
+    padding-left: 360px;
+}
+.email {
+    color: #DA9C9D;
+    padding: 25px;
+    border: 2px outset #F0B7C4;
+    width: 170px;
+	font-family: "richmond-display", sans-serif;
+}
+.privacy {
+    color: #FFFFFF;
+    text-align: center;
+    height: 202px;
+    font-family: "drummond-variable", sans-serif;
+    margin: 80px;
+    font-size: 20px;
+}
+button {
+    margin: 25px;
+    display: block;
+    font-size: 30px;
+	font-family: "drummond-variable", sans-serif;
+	background-color:pink;
+    
 }

@@ -8,12 +8,14 @@
 <link href="../styles.css" rel="stylesheet" type="text/css">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<link rel="stylesheet" href="https://use.typekit.net/sus0ohb.css">
+<link rel="stylesheet" href="https://use.typekit.net/pzw3fkr.css">
 </head>
 
 <body>
 <wrapper>
   <header>
-    <h1>Melanie Martinez</h1>
+   <h1>Melanie Martinez</h1>
   </header>
   <nav>
     <ul>
