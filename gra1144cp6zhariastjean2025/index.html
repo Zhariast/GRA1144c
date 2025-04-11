@@ -84,8 +84,18 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
-	font-size: 30px;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #FF282C;
 }
+	.price{
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.56);
+	}
 
 div{
 position: absolute;
@@ -165,6 +175,10 @@ h2 {
 	font-weight: 600;
     font-size: 20px;
 }
+.sale {
+    font-size: 40px;
+    color: #FF2928;
+}
 	p{
 		font-family: "Montserrat", sans-serif;
 		}
@@ -216,6 +230,7 @@ wrapper header img {
 </ul>
 </nav>
 <section class="appearel">
+
 <div style="visibility:
 visible;"> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('White','','back-mini-dress.png',1)"><img src="mini-dress.png" alt="White Mini Dress" width="" height="750" id="White"></a></div>
 <div>
@@ -225,7 +240,10 @@ visible;"> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImag
 </section>
 <section class="info">
 <h1>Tiered Mini Dress With Built-In Cups</h1>
-<h3>$20</h3>
+	<h2 class="sale">SALE!!</h2>
+<h3 class="price">$20.00</h3>
+	<h3>$12.99</h3>
+<h2>COLOR</h2>
 <nav class="color">
 <button class="white" onClick="MM_showHideLayers('White','','show','Pink','','hide','Yellow','','hide','Blue','','hide')"></button>
 <button class="pink" onClick="MM_showHideLayers('White','','hide','Pink','','show','Yellow','','hide','Blue','','hide')"></button>
