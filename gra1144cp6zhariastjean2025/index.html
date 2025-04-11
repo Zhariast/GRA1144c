@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Charlotte Russe | Zharia StJean, 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script type="text/javascript">
 function MM_swapImgRestore() { //v3.0
 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
@@ -26,29 +29,37 @@ var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.len
 if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
+var i,p,v,obj,args=MM_showHideLayers.arguments;
+for (i=0; i<(args.length-2); i+=3) 
+with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+obj.visibility=v; }
 }
 </script>
 </head>
 <style>
 body {
-	margin: 0px;
-    padding: 0px;
-    background-color: #FFFFFF;
+margin: 0px;
+padding: 0px;
+background-color: #FFFFFF;
 }
-	wrapper{
-		width: 1366px;
+wrapper{
+    width: 1366px;
     display: block;
     background-color: #FFFFFF;
     margin: auto;
-	}
-	ul li{
-		display:inline-block;
-		
+}
+ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    text-align: center;
+
+}
+	ul li:hover{
+    text-decoration: underline;	
+	cursor: pointer;
 	}
 section {
 display: inline-block;
@@ -62,48 +73,136 @@ margin-right: -4px;
 .appearel{
 position:relative;
 }
-div{
-    position: absolute;
-    top: 0;
-    left: 40px;
-    visibility: hidden;
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
 }
-	button{
-		display:inline-block;
-			width: 50px;
-		height: 50px;
-		border-radius:25px;
-		border: #FFFFFF thick solid;
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+	font-size: 30px;
+}
+
+div{
+position: absolute;
+top: 0;
+left: 90px;
+visibility: hidden;
+}
+.info .color button {
+display:inline-block;
+width: 50px;
+height: 50px;
+border-radius:25px;
+border: #FFFFFF medium solid;
+cursor: pointer;
+}
+
+
+.white{
+background-color: #E5E3D9;
+}
+.pink{
+background-color: #FAB4B2;
+}
+.yellow{
+background-color: #F6E171;
+}
+.blue{
+background-color: #93C4C3;
+top: 234px;
+bottom: 330px;
+}
+.info .color button:hover{
+border:#FF5795 medium solid;
+}
+nav .size li {
+font-size: 12px;
+padding:20px;
+border-width:50px;
+margin-right: 20px;
+border: thin solid #FF3F9E;
+}
+
+footer{
+width: 1300px;
+font-size: 14px;
+padding-top: 150px;
+padding-right: 0px;
+	text-align:center;
+}
+.info .size button {
+display: inline-block;
+width: 90px;
+height: 50px;
+font-size: 13px;
+margin-right: 20px;
+background-color: #FFFFFF;
+border: thin solid #FF5795;
+}
+.info .size button:hover{
+background-color: #FF5795;
+border: thin solid #000000;
+color:#FFFFFF;
+cursor: pointer;
+}
+nav ul  {
+    background-color: #F61881;
+    color: #FFFFFF;
+    text-align: center;	
+}
+	.shop-bag{
+    position: absolute;
+    top: 99px;
+    right: 195px;
 	}
-	.white{
-		background-color: #E5E3D9;
+h2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+    font-size: 20px;
+}
+	p{
+		font-family: "Montserrat", sans-serif;
+		}
+	
+	header{
+    height: 80px;
 	}
-	.pink{
-		background-color: #FAB4B2;
-	}
-	.yellow{
-		background-color: #F6E171;
-	}
-	.blue{
-	background-color: #93C4C3;
-	top: 234px;
-	bottom: 330px;
-	}
-	button:hover{
-		border:#000000 thick solid;
+wrapper header img {
+    position: absolute;
+    top: -44px;
+    left: 538px;
+}
+.bag {
+    display: inline-block;
+    margin: 40px 60px;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #FF108C;
+    border:solid black thin;	
+}
+	.bag:hover{
+		color: #000000;
+    background-color: #FFFFFF;
+		border:solid black thin;
+		text-decoration: underline;	
+	cursor: pointer;
 	}
 	
-	footer{
-	width: 1320px;
-	font-size: 14px;
-	padding-top: 400px;
-	padding-right: 0px;
+	.details{
+    font-size: 12px;
 	}
 </style>
 
 <body onLoad="MM_preloadImages('back-mini-dress.png','back-mini-dress-pink.png','back-mini-dress-yellow.png','back-mini-dress-blue.png')">
 <wrapper>
-<header></header>
+<header><img src="Charlotte-Russe-logo.png" alt="logo" height="200"></header>
 <main>
 <nav>
 <ul>
@@ -113,38 +212,45 @@ div{
 <li>SHOES</li>
 <li>ACCESSORIES</li>
 <li>SALE</li>
+<img src="shop-bag.png" class="shop-bag" alt="shopping-bag" height="30">
 </ul>
 </nav>
 <section class="appearel">
 <div style="visibility:
-visible;"> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('White','','back-mini-dress.png',1)"><img src="mini-dress.png" alt="White Mini Dress" width="" height="500" id="White"></a></div>
+visible;"> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('White','','back-mini-dress.png',1)"><img src="mini-dress.png" alt="White Mini Dress" width="" height="750" id="White"></a></div>
 <div>
-<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Pink','','back-mini-dress-pink.png',1)"><img src="mini-dress-pink.png" alt="Pink Mini Dress" width="" height="500" id="Pink"></a></div>
-<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Yellow','','back-mini-dress-yellow.png',1)"><img src="mini-dress-yellow.png" alt="Yellow Mini Dress" width="" height="500" id="Yellow"></a></div>
-<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Blue','','back-mini-dress-blue.png',1)"><img src="mini-dress-blue.png" alt="Blue Mini Dress" width="" height="500" id="Blue"></a></div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Pink','','back-mini-dress-pink.png',1)"><img src="mini-dress-pink.png" alt="Pink Mini Dress" width="" height="750" id="Pink"></a></div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Yellow','','back-mini-dress-yellow.png',1)"><img src="mini-dress-yellow.png" alt="Yellow Mini Dress" width="" height="750" id="Yellow"></a></div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Blue','','back-mini-dress-blue.png',1)"><img src="mini-dress-blue.png" alt="Blue Mini Dress" width="" height="750" id="Blue"></a></div>
 </section>
 <section class="info">
 <h1>Tiered Mini Dress With Built-In Cups</h1>
 <h3>$20</h3>
 <nav class="color">
-	<button class="white" onClick="MM_showHideLayers('White','','show','Pink','','hide','Yellow','','hide','Blue','','hide')"></button>
-	 <button class="pink" onClick="MM_showHideLayers('White','','hide','Pink','','show','Yellow','','hide','Blue','','hide')"></button>
-	<button class="yellow"  onClick="MM_showHideLayers('White','','hide','Pink','','hide','Yellow','','show','Blue','','hide')"></button>
-	<button class="blue" onClick="MM_showHideLayers('White','','hide','Pink','','hide','Yellow','','hide','Blue','','show')"></button>
-	</nav>
-	<nav class="size">
-		<button>XS</button>
-	    <button>S</button>
-		<button>M</button>
-		<button>L</button>
-		<button>XL</button>
-	</nav>
+<button class="white" onClick="MM_showHideLayers('White','','show','Pink','','hide','Yellow','','hide','Blue','','hide')"></button>
+<button class="pink" onClick="MM_showHideLayers('White','','hide','Pink','','show','Yellow','','hide','Blue','','hide')"></button>
+<button class="yellow"  onClick="MM_showHideLayers('White','','hide','Pink','','hide','Yellow','','show','Blue','','hide')"></button>
+<button class="blue" onClick="MM_showHideLayers('White','','hide','Pink','','hide','Yellow','','hide','Blue','','show')"></button>
+</nav>
+<h2>SIZE</h2>
+<nav class="size">
+<button>XS</button>
+<button>S</button>
+<button>M</button>
+<button>L</button>
+<button>XL</button>
+
+</nav>
+	<button class="bag">ADD TO BAG</button>
+<h2>Description</h2>
+<p>This dress features straight-cut neckline, adjustable straps,<br> built-in bra cups, self-tie open back, tiering, and mini length.</p>
 	
+	<p class="details"> 65% Rayon | 35% Polyester | Cold Wash | Hang to Wash  </p>
 
 
 </section>
 </main>
-<footer><p>&copy; Year, Your name. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<footer><p>&copy; 2025, Zharia StJean. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative<br> of actual products on the market in a similar product category.</p></footer>
 </wrapper>
 </body>
 </html>
