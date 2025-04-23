@@ -61,10 +61,17 @@ footer {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-#tabs-1 input {
+input {
     margin-left: 8px;
     padding: 6px;
     border-radius: 6px;
+    margin-right: 8px;
+}
+
+#tabs-5 select {
+	margin-left: 8px;
+    padding: 6px;
+	border-radius: 6px;
     margin-right: 8px;
 }
 </style>
@@ -91,11 +98,19 @@ footer {
       <li><a href="#tabs-5"><img src="cruise.png" alt="" width="446" height="480" class="icons"><br>
       Cruises</a></li>
     </ul>
-    <div id="tabs-1"><input type="text" placeholder="Leaving from"><input type="text" placeholder="Going to"><input type="date"><input type="date"><input type="submit"></div>
+    <div id="tabs-1"><input type="text" placeholder="Leaving from"><input type="text" placeholder="Going to"><label>From:</label><input type="date"><label>To:</label><input type="date"><input type="submit"></div>
     <div id="tabs-2"></div>
     <div id="tabs-3"> </div>
-    <div id="tabs-4"> </div>
-    <div id="tabs-5"> </div>
+    <div id="tabs-4"><input type="text" placeholder="Attractions"><input type="time"></div>
+    <div id="tabs-5"><input type="text" placeholder="Going To"><label>Start Date:</label><input type="date">
+		<label>Arrival Date:</label><input type="date">
+		<select>
+		<option value="0">Nights</option>
+		<option value="1">3</option>
+		<option value="2">4</option>
+		<option value="3">5</option>
+		<option value="4">6</option>
+		</select></div>
   </div>
 </wrapper>
 <footer><p>&copy; 2025, Zharia StJean. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
