@@ -3,20 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Odyssey | Zharia StJean, 2025</title>
+<link rel="stylesheet" href="https://use.typekit.net/tpy3vat.css">
 <style type="text/css">
 body {
     margin: 0;
     background-image: url(beach.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #EEE6DF;
+    background-color: #F5F7F8;
     background-position: 0% 100px;
 }
 header {
     height: 100px;
-    background-color: #6BBFB0;
+    background-color: rgba(227,255,250,0.39);
     background-position: 0% 0px;
+	
 }
+	
 wrapper {
     width: 1366px;
     margin: auto;
@@ -32,6 +35,18 @@ footer {
     padding: 8px;
     background-color: rgba(0,0,0,0.20);
 }
+	li{
+    font-size: 15pxpx;
+	}
+	.logo{
+    position: absolute;
+    left: 14px;
+    top: 10px;
+	}
+	.odyssey {
+    position: absolute;
+    left: 190px;
+	}
 .icons {
     height: 50px;
     width: auto;
@@ -42,9 +57,9 @@ footer {
     border: none;
     background-image: none;
     color: rgba(255,255,255,1.00);
-    border-top-left-radius: 10px;
+    
     margin: 0 0 0 12px;
-    border-top-right-radius: 10px;
+    
 }
 #Tabs1 ul {
     border: none;
@@ -58,21 +73,45 @@ footer {
 }
 #Tabs1 div {
     background-color: rgba(255,255,255,0.50);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    
 }
 input {
     margin-left: 8px;
     padding: 6px;
     border-radius: 6px;
     margin-right: 8px;
+    border: thin groove #69C9BA;
+	background-color: #FFFFFF;
 }
+	input:hover{
+		cursor: pointer;
+	}
 
-#tabs-5 select {
-	margin-left: 8px;
+select {
+    margin-left: 8px;
     padding: 6px;
-	border-radius: 6px;
+    border-radius: 6px;
     margin-right: 8px;
+    border: thin groove #69C9BA;	
+}
+section {
+    display: inline-block;
+    padding-left: 15px;
+    margin: 25px;
+}
+	.travel{
+    padding-right: 15px;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 38px;
+	}
+	h1{
+    display: inline-block;
+    padding-right: 300px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-weight: normal;
+	}
+.h1 {
+
 }
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -83,7 +122,8 @@ input {
 </head>
 
 <body>
-<header></header>
+<header><img src="Logo.png" alt="logo" width="" height="70" class="logo"><img src="odyssey.png" alt="odyssey" height="100" class="odyssey">
+</header>
 <wrapper>
   <div id="Tabs1">
     <ul>
@@ -99,9 +139,22 @@ input {
       Cruises</a></li>
     </ul>
     <div id="tabs-1"><input type="text" placeholder="Leaving from"><input type="text" placeholder="Going to"><label>From:</label><input type="date"><label>To:</label><input type="date"><input type="submit"></div>
-    <div id="tabs-2"></div>
-    <div id="tabs-3"> </div>
-    <div id="tabs-4"><input type="text" placeholder="Attractions"><input type="time"></div>
+	  
+    <div id="tabs-2"><input type="text" placeholder="Destination"><input type="date">
+		<select>
+		<option value="0">Guests</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		</select>
+		<input type="submit">
+	  </div>
+	  
+    <div id="tabs-3"><label>Pick Up:</label><input type="text" placeholder="Pick-Up"><input type="date"><input type="time"><label>Drop Off:</label><input type="text" placeholder="Drop-Off"><input type="date"><input type="time"><input type="submit"></div>
+	  
+    <div id="tabs-4"><input type="text" placeholder="Attractions"><input type="time"><input type="submit"></div>
+	  
     <div id="tabs-5"><input type="text" placeholder="Going To"><label>Start Date:</label><input type="date">
 		<label>Arrival Date:</label><input type="date">
 		<select>
@@ -110,8 +163,15 @@ input {
 		<option value="2">4</option>
 		<option value="3">5</option>
 		<option value="4">6</option>
-		</select></div>
+		</select><input type="submit"></div>
   </div>
+	<section>
+		<img src="beach2.jpg" alt="beach" width="" height="250" class="travel">
+		<img src="mountains.jpg" alt="" width="" height="250" class="travel">
+		<img src="city.jpg" alt="" width="" height="250" class="travel">
+		
+	
+	</section>
 </wrapper>
 <footer><p>&copy; 2025, Zharia StJean. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
 <script type="text/javascript">
