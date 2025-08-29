@@ -4,18 +4,67 @@
 <meta charset="utf-8">
 <title>Ice cream</title>
 <link rel="stylesheet" href="https://use.typekit.net/rpv7mjp.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <style>
-	
+	svg{
+	height: 600px;
+	}
+	main{
+	text-align:center;
+	}
 	body{
+    background-image:url("ic-bg.jpg");
+	background-size:contain
+	}
+	wrapper{
     background-color: #1ab581;
+    display: block;
+    width: 1300px;
+    margin-top: 0px;
+    margin-left: 50px;
 	}
 	h1{
     font-family: "cheesecake", sans-serif;
     font-weight: 500;
     font-style: normal;
-	font-size: 81px;
+    font-size: 100px;
     text-align: center;
     letter-spacing: 4px;
+    color: #6E400D;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -10px;
+	}
+	h2{
+    font-family: "Lily Script One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    padding: 4px;
+    color: #00BE8B;
+    background-color: #FFF2DE;
+    border: medium solid #7D4900;
+	}
+	nav{
+    background-color: rgba(255,240,218,0.60);
+    width: 1500px;
+    height: 120px;
+    padding-top: 1px;
+    margin-top: 0px;
+    border: medium solid #6F3F0A;
+	}
+	footer{
+		font-family: "Nunito", sans-serif;
+		font-weight:700;
+		text-align:center;
+		background-color: rgba(255,240,218,0.60);
 	}
 	
 	#fill-straw, #fill-mint,#fill-lemon,#fill-vanilla{
@@ -44,15 +93,18 @@
 	#white-choc:hover #txt-white{
 		visibility: visible;
 	}
-	#white-choc:hover #txt-choc{
+	#chocstraw:hover #txt-choc{
 		visibility: visible;
 	}
 </style>
 </head>
 
 <body>
-	
-	<h1>Pick a Flavor!</h1>
+
+	<nav><h1>Pick a Flavor!</h1>
+		</nav>
+		<h2>Can you find the two hidden Flavors?</h2>
+	<wrapper>
 <main>
 <svg xmlns="http://www.w3.org/2000/svg" width="1226.05" height="918.28" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1226.05 918.28">
  
@@ -677,5 +729,8 @@
   </g>
 </svg>
 </main>
+</wrapper>
+	<footer><p>© 2025, Zharia StJean</p>
+<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
 </body>
 </html>
