@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hairstyle | Zharia StJean, 2025</title>
+	<link rel="stylesheet" href="https://use.typekit.net/sea7joz.css">
+	
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+
+	p{
+		color:white;
+		background-color: #110128;
+		width:;
+		text-align: center;
+		padding: 10px;
+	}
+	.title{
+		font-family: "brush-up-too", sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		font-size: 30px;
+	}
+#face {
+	background-image: url("Face.png");
+	width: 504px;
+	margin: 50px;
+	text-align: center;
+	background-repeat: no-repeat;
+	height: 643px;
+	position: relative;
+	left: 230px;
+}
+wrapper {
+    width: 1100px;
+    padding-left: 100px;
+    height: auto;
+	display:block;
+}
+section {
+    background-color: rgba(162,163,185,0.68);
+    box-sizing: border-box;
+    border-width: medium;
+}
+body {
+    background-image: url(skull-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	width:50%;
+}
+	
+#faux, #blonde, #brown {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    background-image: url(blank-face.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    height: 390px;}
+	
+#drag1, #drag2, #drag3 {
+  width: 100%;
+  height: auto;  
+}
+</style>
+</head>
+
+<body>
+	
+<wrapper>
+	<p class="title">Pick a Hairstyle!</p>
+  <section id="face" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+  <section id="faux" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="faux-hawk.png" alt="faux-hawk" id="drag1" draggable="true" ondragstart="drag(event)" ></section>
+  <section id="blonde" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="dirty-blonde.png" alt="dirty-blonde" id="drag2" draggable="true" ondragstart="drag(event)"></section>
+  <section id="brown" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="brown-bang.png" alt="brown-bang" id="drag3" draggable="true" ondragstart="drag(event)"></section>
+	<footer><p>&copy; 2025, Zharia StJean
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</wrapper>
+</body>
+</html>
